@@ -1,11 +1,5 @@
 {{-- Search --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( bbp_allow_search() )
 
 

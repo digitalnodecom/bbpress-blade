@@ -1,11 +1,5 @@
 {{-- New/Edit Reply --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( bbp_is_reply_edit() )
 
 

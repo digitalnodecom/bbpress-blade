@@ -1,11 +1,5 @@
 {{-- Anonymous User --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( bbp_current_user_can_access_anonymous_user_form() )
 
 

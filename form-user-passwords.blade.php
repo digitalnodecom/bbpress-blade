@@ -1,12 +1,6 @@
 {{-- User Password Generator --}}
 {{--  Filters the display of the password fields  --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( apply_filters( 'show_password_fields', true, bbpress()->displayed_user ) )
 
 

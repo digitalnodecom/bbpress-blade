@@ -1,7 +1,5 @@
 {{-- Single Topic Lead Content Part --}}
-
 @php( do_action( 'bbp_template_before_lead_topic' ) )
-
 <ul id="bbp-topic-{{ bbp_topic_id() }}-lead" class="bbp-lead-topic">
 
 	<li class="bbp-header">

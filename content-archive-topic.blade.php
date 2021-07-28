@@ -1,5 +1,4 @@
 {{-- Archive Topic Content Part  --}}
-
 <div id="bbpress-forums" class="bbpress-wrapper">
 
     @if ( bbp_allow_search() )

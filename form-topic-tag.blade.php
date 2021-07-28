@@ -1,11 +1,5 @@
 {{-- Edit Topic Tag --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( current_user_can( 'edit_topic_tags' ) )
 
 

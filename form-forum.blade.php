@@ -1,11 +1,5 @@
 {{-- New/Edit Forum --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( bbp_is_forum_edit() )
 
 

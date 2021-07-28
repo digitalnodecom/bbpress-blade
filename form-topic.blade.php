@@ -1,11 +1,5 @@
 {{-- New/Edit Topic --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-@endphp
 @if ( ! bbp_is_single_forum() )
 
 
