@@ -1,13 +1,5 @@
 {{-- Statistics Content Part --}}
-{{--  Get the statistics  --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    $stats = bbp_get_statistics(); @endphp
+@php( $stats = bbp_get_statistics(); )
 
 <dl role="main">
 
