@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'bbp_template_before_replies_loop' ); @endphp
 
-<ul id="topic-@php bbp_topic_id(); @endphp-replies" class="forums bbp-replies">
+<ul id="topic-{{ bbp_topic_id() }}-replies" class="forums bbp-replies">
 
 	<li class="bbp-header">
 		<div class="bbp-reply-author">@php esc_html_e( 'Author',  'bbpress' ); @endphp</div><!-- .bbp-reply-author -->
@@ -53,7 +53,7 @@ do_action( 'bbp_template_before_replies_loop' ); @endphp
 			: esc_html_e( 'Posts',   'bbpress' );
 		@endphp</div><!-- .bbp-reply-content -->
 	</li><!-- .bbp-footer -->
-</ul><!-- #topic-@php bbp_topic_id(); @endphp-replies -->
+</ul><!-- #topic-{{ bbp_topic_id() }}-replies -->
 
 @php do_action( 'bbp_template_after_replies_loop' );
 @endphp

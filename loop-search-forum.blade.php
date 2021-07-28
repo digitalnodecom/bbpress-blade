@@ -2,7 +2,7 @@
 <div class="bbp-forum-header">
     <div class="bbp-meta">
         <span class="bbp-forum-post-date">@php printf( esc_html__( 'Last updated %s', 'bbpress' ), bbp_get_forum_last_active_time() ); @endphp</span>
-        <a href="@php bbp_forum_permalink(); @endphp" class="bbp-forum-permalink">#@php bbp_forum_id(); @endphp</a>
+        <a href="@php bbp_forum_permalink(); @endphp" class="bbp-forum-permalink">#{{ bbp_forum_id() }}</a>
     </div><!-- .bbp-meta -->
 
     <div class="bbp-forum-title">
@@ -17,7 +17,7 @@
     </div><!-- .bbp-forum-title -->
 </div><!-- .bbp-forum-header -->
 
-<div id="post-@php bbp_forum_id(); @endphp" @php bbp_forum_class(); @endphp>
+<div id="post-{{ bbp_forum_id() }}" @php bbp_forum_class(); @endphp>
     <div class="bbp-forum-content">
 
         @php do_action( 'bbp_theme_before_forum_content' ); @endphp
@@ -27,4 +27,4 @@
         @php do_action( 'bbp_theme_after_forum_content' ); @endphp
 
     </div><!-- .bbp-forum-content -->
-</div><!-- #post-@php bbp_forum_id(); @endphp -->
+</div><!-- #post-{{ bbp_forum_id() }} -->

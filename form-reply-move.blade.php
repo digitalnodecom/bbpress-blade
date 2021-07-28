@@ -7,7 +7,7 @@
     @if ( is_user_logged_in() && current_user_can( 'edit_topic', bbp_get_topic_id() ) )
 
 
-        <div id="move-reply-@php bbp_topic_id(); @endphp" class="bbp-reply-move">
+        <div id="move-reply-{{ bbp_topic_id() }}" class="bbp-reply-move">
 
             <form id="move_reply" name="move_reply" method="post">
 

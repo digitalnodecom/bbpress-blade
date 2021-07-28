@@ -21,7 +21,7 @@
         @if ( bbp_current_user_can_access_create_reply_form() )
 
 
-            <div id="new-reply-@php bbp_topic_id(); @endphp" class="bbp-reply-form">
+            <div id="new-reply-{{ bbp_topic_id() }}" class="bbp-reply-form">
 
                 <form id="new-post" name="new-post" method="post">
 
@@ -245,7 +245,7 @@
         @elseif ( bbp_is_topic_closed() )
 
 
-            <div id="no-reply-@php bbp_topic_id(); @endphp" class="bbp-no-reply">
+            <div id="no-reply-{{ bbp_topic_id() }}" class="bbp-no-reply">
                 <div class="bbp-template-notice">
                     <ul>
                         <li>@php printf( esc_html__( 'The topic &#8216;%s&#8217; is closed to new replies.', 'bbpress' ), bbp_get_topic_title() ); @endphp</li>
@@ -257,7 +257,7 @@
         @elseif ( bbp_is_forum_closed( bbp_get_topic_forum_id() ) )
 
 
-            <div id="no-reply-@php bbp_topic_id(); @endphp" class="bbp-no-reply">
+            <div id="no-reply-{{ bbp_topic_id() }}" class="bbp-no-reply">
                 <div class="bbp-template-notice">
                     <ul>
                         <li>@php printf( esc_html__( 'The forum &#8216;%s&#8217; is closed to new topics and replies.', 'bbpress' ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); @endphp</li>
@@ -269,7 +269,7 @@
         @else
 
 
-            <div id="no-reply-@php bbp_topic_id(); @endphp" class="bbp-no-reply">
+            <div id="no-reply-{{ bbp_topic_id() }}" class="bbp-no-reply">
                 <div class="bbp-template-notice">
                     <ul>
                         <li>@php is_user_logged_in()

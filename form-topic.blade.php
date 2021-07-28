@@ -35,7 +35,7 @@
         @if ( bbp_current_user_can_access_create_topic_form() )
 
 
-            <div id="new-topic-@php bbp_topic_id(); @endphp" class="bbp-topic-form">
+            <div id="new-topic-{{ bbp_topic_id() }}" class="bbp-topic-form">
 
                 <form id="new-post" name="new-post" method="post">
 
@@ -289,7 +289,7 @@
         @elseif ( bbp_is_forum_closed() )
 
 
-            <div id="forum-closed-@php bbp_forum_id(); @endphp" class="bbp-forum-closed">
+            <div id="forum-closed-{{ bbp_forum_id() }}" class="bbp-forum-closed">
                 <div class="bbp-template-notice">
                     <ul>
                         <li>@php printf( esc_html__( 'The forum &#8216;%s&#8217; is closed to new topics and replies.', 'bbpress' ), bbp_get_forum_title() ); @endphp</li>
@@ -301,7 +301,7 @@
         @else
 
 
-            <div id="no-topic-@php bbp_forum_id(); @endphp" class="bbp-no-topic">
+            <div id="no-topic-{{ bbp_forum_id() }}" class="bbp-no-topic">
                 <div class="bbp-template-notice">
                     <ul>
                         <li>@php is_user_logged_in()

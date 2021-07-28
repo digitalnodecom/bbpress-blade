@@ -1,7 +1,7 @@
 {{-- Search Loop - Single Topic --}}<div class="bbp-topic-header">
     <div class="bbp-meta">
         <span class="bbp-topic-post-date">@php bbp_topic_post_date( bbp_get_topic_id() ); @endphp</span>
-        <a href="@php bbp_topic_permalink(); @endphp" class="bbp-topic-permalink">#@php bbp_topic_id(); @endphp</a>
+        <a href="@php bbp_topic_permalink(); @endphp" class="bbp-topic-permalink">#{{ bbp_topic_id() }}</a>
     </div><!-- .bbp-meta -->
 
     <div class="bbp-topic-title">
@@ -39,7 +39,7 @@
 
 </div><!-- .bbp-topic-header -->
 
-<div id="post-@php bbp_topic_id(); @endphp" @php bbp_topic_class(); @endphp>
+<div id="post-{{ bbp_topic_id() }}" @php bbp_topic_class(); @endphp>
     <div class="bbp-topic-author">
 
         @php do_action( 'bbp_theme_before_topic_author_details' ); @endphp
@@ -73,4 +73,4 @@
         @php do_action( 'bbp_theme_after_topic_content' ); @endphp
 
     </div><!-- .bbp-topic-content -->
-</div><!-- #post-@php bbp_topic_id(); @endphp -->
+</div><!-- #post-{{ bbp_topic_id() }} -->

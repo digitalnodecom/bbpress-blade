@@ -1,5 +1,5 @@
 {{-- Topics Loop - Single --}}
-<ul id="bbp-topic-@php bbp_topic_id(); @endphp" @php bbp_topic_class(); @endphp>
+<ul id="bbp-topic-{{ bbp_topic_id() }}" @php bbp_topic_class(); @endphp>
     <li class="bbp-topic-title">
 
 
@@ -103,4 +103,4 @@
 
         </p>
     </li>
-</ul><!-- #bbp-topic-@php bbp_topic_id(); @endphp -->
+</ul><!-- #bbp-topic-{{ bbp_topic_id() }} -->

@@ -1,5 +1,5 @@
 {{-- Forums Loop - Single Forum --}}
-<ul id="bbp-forum-@php bbp_forum_id(); @endphp" @php bbp_forum_class(); @endphp>
+<ul id="bbp-forum-{{ bbp_forum_id() }}" @php bbp_forum_class(); @endphp>
     <li class="bbp-forum-info">
 
 
@@ -64,4 +64,4 @@
 
         </p>
     </li>
-</ul><!-- #bbp-forum-@php bbp_forum_id(); @endphp -->
+</ul><!-- #bbp-forum-{{ bbp_forum_id() }} -->

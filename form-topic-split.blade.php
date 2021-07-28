@@ -7,7 +7,7 @@
     @if ( is_user_logged_in() && current_user_can( 'edit_topic', bbp_get_topic_id() ) )
 
 
-        <div id="split-topic-@php bbp_topic_id(); @endphp" class="bbp-topic-split">
+        <div id="split-topic-{{ bbp_topic_id() }}" class="bbp-topic-split">
 
             <form id="split_topic" name="split_topic" method="post">
 
@@ -129,7 +129,7 @@
     @else
 
 
-        <div id="no-topic-@php bbp_topic_id(); @endphp" class="bbp-no-topic">
+        <div id="no-topic-{{ bbp_topic_id() }}" class="bbp-no-topic">
             <div class="entry-content">@php is_user_logged_in()
 				? esc_html_e( 'You do not have permission to edit this topic.', 'bbpress' )
 				: esc_html_e( 'You cannot edit this topic.',                    'bbpress' );

@@ -8,7 +8,7 @@
 
     do_action( 'bbp_template_before_forums_loop' ); @endphp
 
-<ul id="forums-list-@php bbp_forum_id(); @endphp" class="bbp-forums">
+<ul id="forums-list-{{ bbp_forum_id() }}" class="bbp-forums">
 
     <li class="bbp-header">
 
