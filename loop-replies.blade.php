@@ -1,12 +1,5 @@
 {{-- Replies Loop --}}
-
-@php
-
-
-
-defined( 'ABSPATH' ) || exit;
-
-do_action( 'bbp_template_before_replies_loop' ); @endphp
+@php( do_action( 'bbp_template_before_replies_loop' ) )
 
 <ul id="topic-{{ bbp_topic_id() }}-replies" class="forums bbp-replies">
 

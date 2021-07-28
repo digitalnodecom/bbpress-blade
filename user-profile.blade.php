@@ -1,12 +1,6 @@
 {{-- User Profile --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_profile' ); @endphp
+@php( do_action( 'bbp_template_before_user_profile' ) )
 
 <div id="bbp-user-profile" class="bbp-user-profile">
     <h2 class="entry-title">@@php bbp_displayed_user_field( 'user_nicename' ); @endphp</h2>

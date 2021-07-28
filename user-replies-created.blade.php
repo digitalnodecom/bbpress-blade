@@ -1,12 +1,5 @@
 {{-- User Replies Created --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_replies' ); @endphp
+@php( do_action( 'bbp_template_before_user_replies' ) )
 
 <div id="bbp-user-replies-created" class="bbp-user-replies-created">
 

@@ -1,12 +1,5 @@
 {{-- Pagination for pages of replies (when viewing a topic) --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_pagination_loop' ); @endphp
+@php( do_action( 'bbp_template_before_pagination_loop' ) )
 
 <div class="bbp-pagination">
     <div class="bbp-pagination-count">@php bbp_topic_pagination_count(); @endphp</div>

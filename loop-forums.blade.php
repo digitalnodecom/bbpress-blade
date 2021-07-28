@@ -1,12 +1,5 @@
 {{-- Forums Loop --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_forums_loop' ); @endphp
+@php( do_action( 'bbp_template_before_forums_loop' ) )
 
 <ul id="forums-list-{{ bbp_forum_id() }}" class="bbp-forums">
 

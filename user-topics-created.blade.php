@@ -1,12 +1,5 @@
 {{-- User Topics Created --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_topics_created' ); @endphp
+@php( do_action( 'bbp_template_before_user_topics_created' ) )
 
 <div id="bbp-user-topics-started" class="bbp-user-topics-started">
 

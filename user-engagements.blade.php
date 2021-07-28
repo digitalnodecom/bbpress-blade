@@ -1,12 +1,6 @@
 {{-- User Engagements --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_engagements' ); @endphp
+@php( do_action( 'bbp_template_before_user_engagements' ) )
 
 <div id="bbp-user-engagements" class="bbp-user-engagements">
 

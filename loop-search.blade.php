@@ -1,14 +1,6 @@
-{{-- Search Loop
+{{-- Search Loop --}}
 
-  --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_search_results_loop' ); @endphp
+@php( do_action( 'bbp_template_before_search_results_loop' ) )
 
 <ul id="bbp-search-results" class="forums bbp-search-results">
 

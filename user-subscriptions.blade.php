@@ -1,13 +1,5 @@
 {{-- User Subscriptions --}}
-
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_subscriptions' ); @endphp
-
+@php( do_action( 'bbp_template_before_user_subscriptions' ) )
 
 @if ( bbp_is_subscriptions_active() )
 

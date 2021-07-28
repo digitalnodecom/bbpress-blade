@@ -1,12 +1,6 @@
 {{-- User Favorites --}}
 
-@php
-
-
-
-    defined( 'ABSPATH' ) || exit;
-
-    do_action( 'bbp_template_before_user_favorites' ); @endphp
+@php( do_action( 'bbp_template_before_user_favorites' ) )
 
 <div id="bbp-user-favorites" class="bbp-user-favorites">
 
